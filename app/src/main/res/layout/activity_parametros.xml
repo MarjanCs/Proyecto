@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Parametros">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:text="parametros" />
+
+    <EditText
+        android:id="@+id/dias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Días que sedebe asistir"
+
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor de la asistencia"
+        android:inputType="number" />
+
+
+
+    <EditText
+        android:id="@+id/faltas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Num. faltas permitidas"
+        android:inputType="number" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="resultados"
+        android:editable="false"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/idNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=" Nombre                          " />
+
+        <Button
+            android:id="@+id/btnconsul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="buscar" />
+
+
+    </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/textresul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:editable="false"
+            android:text="Numero de dias asistido"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:editable="false"
+            android:text="Promedio"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtpromedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+
+            android:id="@+id/btnSacar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:text="sacar resultados" />
+
+        <Button
+            android:id="@+id/btncancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:text="Cancelar" />
+    </GridLayout>
+
+
+
+</LinearLayout>

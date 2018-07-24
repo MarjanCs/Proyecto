@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EjemploSQLite</string>
+    <string name="title_activity_parametros">Parametros</string>
+    <string name="title_activity_resutados">Resutados</string>
+</resources>
